@@ -5,7 +5,7 @@ export async function POST(request: Request) {
     const { message } = await request.json()
 
     // Connect to your Python backend
-    const response = await fetch("http://localhost:8000/chat", {
+    const response = await fetch("https://backend-pt1h.onrender.com/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
